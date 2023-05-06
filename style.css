@@ -1,16 +1,56 @@
-body{
-  background: #f6f8f5;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    background: #f6f8f5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ______________________________ */
+
 img {
-  width: 300px;
-  padding: 5px 0 0 0;
+    width: 300px;
+    padding: 5px 0 0 0;
 }
 
 #inputText {
-  color: #61be03;
+    color: #61be03;
 }
 
 #buttonCat {
-  background: #61be03;
+    background: #61be03;
+}
+
+/* ______________________________ */
+
+.left {
+    width: 550px;
+}
+
+.right {
+    width: 300px;
+}
+
+#formForText {
+    display: block;
+    width: 300px;
+    margin: 20px 0;
+}
+
+#module5 h2 {
+    text-align: center;
+}
+
+#module5 button {
+    display: block;
+    width: 300px;
+}
+
+.simvol {
+    margin: 0 0 20px 0;
 }
