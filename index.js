@@ -7,27 +7,27 @@ buttonCat.addEventListener('click', onClik);
 buttonCat.addEventListener('dblclick', ondblclick);
 
 function onClik(i) {
-  i.preventDefault;
+    i.preventDefault;
 
-  catImg.src = './img/Cat2.webp';
+    catImg.src = './img/Cat2.webp';
 
-  inputText.value = 'Небезпека';
-  inputText.style.color = 'red';
-  inputText.fontSize = '30px';
+    inputText.value = 'Небезпека';
+    inputText.style.color = 'red';
+    inputText.fontSize = '30px';
 
-  buttonCat.style.background = 'orange';
-  buttonCat.value = 'Заспокоїти! -> 2x click';
+    buttonCat.style.background = 'orange';
+    buttonCat.value = 'Заспокоїти! -> 2x click';
 }
 
 function ondblclick(i) {
-  i.preventDefault;
+    i.preventDefault;
 
-  catImg.src = './img/Cat1.jpg';
-  inputText.value = 'Безпека)';
-  inputText.style.color = '#61be03';
+    catImg.src = './img/Cat1.jpg';
+    inputText.value = 'Безпека)';
+    inputText.style.color = '#61be03';
 
-  buttonCat.style.background = '#61be03';
-  buttonCat.value = 'Взбодрити кіску';
+    buttonCat.style.background = '#61be03';
+    buttonCat.value = 'Взбодрити кіску';
 }
 
 //______________________________________________________________
@@ -67,9 +67,9 @@ let someButoon = document.querySelector('#sectionButton');
 someButoon.addEventListener('click', onClickButton);
 
 function onClickButton(event) {
-  //   console.log(`Була натиснута кнопка "${event.target.textContent}"`);
+    //   console.log(`Була натиснута кнопка "${event.target.textContent}"`);
 
-  alert(`Була натиснута кнопка "${event.target.textContent}"`);
+    alert(`Була натиснута кнопка "${event.target.textContent}"`);
 }
 
 //______________________________________________________________
@@ -77,9 +77,31 @@ function onClickButton(event) {
 // Button section & this
 
 function onClickBtnThis(id) {
-  let btn = document.getElementById(id);
+    let btn = document.getElementById(id);
 
-  //   console.log(btn.value);
+    //   console.log(btn.value);
 
-  alert(`Була натиснута кнопка "${btn.value}"`);
+    alert(`Була натиснута кнопка "${btn.value}"`);
+}
+
+//______________________________________________________________
+
+//HW 5module section
+
+// Посилання на поле введеня
+let formForText = document.getElementById('formForText');
+
+// Посилання на кнопки
+let simvol = querySelector('.simvol');
+let btnNumber = document.querySelector('.number');
+
+//Слухач подій для символів
+// simvol.addEventListener('click')
+
+//Слухач подій для цифр
+btnNumber.addEventListener('click', onClickBtn);
+
+function onClickBtn(e) {
+    formForText.value += e.target.textContent;
+    console.log(e.target.textContent);
 }
