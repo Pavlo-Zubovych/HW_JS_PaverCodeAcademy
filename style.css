@@ -36,6 +36,9 @@ img {
     width: 300px;
 }
 
+#module5 button {
+padding: 3px 0;}
+
 #formForText {
     display: block;
     width: 300px;
