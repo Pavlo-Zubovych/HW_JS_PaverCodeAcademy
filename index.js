@@ -62,12 +62,15 @@ function ondblclick(i) {
 // Button section v2
 // Oдин слухач подій, повішений на батьківський елемент для.
 
-let someButoon = document.querySelector("#sectionButton");
+let someButoon = document.querySelector(".btnNum");
+// ! шукає тільки перший клас. потрібно виправити.ы
+
 
 someButoon.addEventListener("click", onClickButton);
 
 function onClickButton(event) {
-	//   console.log(`Була натиснута кнопка "${event.target.textContent}"`);
+	  console.dir(`Була натиснута кнопка "${event.target}"`);
+	//   console.dir(`Була натиснута кнопка "${event.target.textContent}"`);
 
 	alert(`Була натиснута кнопка "${event.target.textContent}"`);
 }
@@ -79,9 +82,10 @@ function onClickButton(event) {
 function onClickBtnThis(id) {
 	let btn = document.getElementById(id);
 
-	//   console.log(btn.value);
-
-	alert(`Була натиснута кнопка "${btn.value}"`);
+	//   console.log(id.value);
+	
+	alert(`Була натиснута кнопка "${id.value}"`);
+	// console.log("id" ,id);
 }
 
 //______________________________________________________________
